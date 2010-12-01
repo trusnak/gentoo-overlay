@@ -1,0 +1,26 @@
+diff --git xbmc-vdr2-9999.old/configure xbmc-vdr2-9999/configure
+index 1596f18..cd2819c 100755
+--- xbmc-vdr2-9999.old/configure
++++ xbmc-vdr2-9999/configure
+@@ -16543,6 +16543,8 @@ if [ -d xbmc/visualizations/Goom/goom2k4-0 ]; then
+--with-pic
+
+else
++ aclocal
++ ./autogen.sh --enable-static --with-pic
+./configure \
+--disable-shared \
+--enable-static \
+diff --git xbmc-vdr2-9999.old/configure.in xbmc-vdr2-9999/configure.in
+index 6b16ad8..831eee9 100644
+--- xbmc-vdr2-9999.old/configure.in
++++ xbmc-vdr2-9999/configure.in
+@@ -1009,6 +1009,8 @@ XB_CONFIG_MODULE([xbmc/visualizations/Goom/goom2k4-0],[
+--with-pic
+
+else
++ aclocal
++ ./autogen.sh --enable-static --with-pic
+./configure \
+--disable-shared \
+--enable-static \ 

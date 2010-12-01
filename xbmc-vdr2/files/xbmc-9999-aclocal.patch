@@ -1,0 +1,19 @@
+*** xbmc-9999.ebuild	Sun Jul 11 22:08:11 2010
+--- xbmc-9999.ebuild.NEW	Fri Jul 30 13:27:47 2010
+***************
+*** 118,124 ****
+  
+  	# some dirs ship generated autotools, some dont
+  	local d
+! 	for d in . xbmc/cores/dvdplayer/Codecs/{libbdnav,libdvd/lib*/} lib/cpluff ; do
+  		[[ -e ${d}/configure ]] && continue
+  		pushd ${d} >/dev/null
+  		einfo "Generating autotools in ${d}"
+--- 118,124 ----
+  
+  	# some dirs ship generated autotools, some dont
+  	local d
+! 	for d in . xbmc/cores/dvdplayer/Codecs/{libdts,libdvd/lib*/} lib/cpluff ; do
+  		[[ -e ${d}/configure ]] && continue
+  		pushd ${d} >/dev/null
+  		einfo "Generating autotools in ${d}"
