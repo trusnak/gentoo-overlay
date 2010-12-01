@@ -1,0 +1,5 @@
+This ebuild, as a fork of standart xbmc ebuild included in portage,
+provides xbmc from PVR enabled branch. In other words, you can watch
+LiveTV with it, if you are lucky and you finish compile process.
+
+Enjoy
